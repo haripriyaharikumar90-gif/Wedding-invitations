@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta property="og:title" content="Haripriya & Rahul — Wedding Invitation">
+<meta property="og:description" content="11 April 2027 • Ponvayalil Convention Centre, Panmana, Karunagappally">
+<title>Haripriya & Rahul | Wedding Invitation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap');
+:root{--beige:#efe2cf;--cream:#fbf6ee;--gold:#a98245;--brown:#5d4734;--green:#66715b}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--beige);color:var(--brown);font-family:'Cormorant Garamond',serif}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:55px 22px;position:relative;overflow:hidden}
+.card{max-width:620px;width:100%;text-align:center;background:rgba(251,246,238,.82);border:1px solid rgba(169,130,69,.35);box-shadow:0 15px 45px rgba(93,71,52,.12);padding:42px 24px;border-radius:28px}
+.ornament{color:var(--gold);font-size:26px;letter-spacing:8px}
+h1{font-family:'Great Vibes',cursive;font-size:clamp(58px,16vw,105px);font-weight:400;color:var(--gold);line-height:.95;margin:18px 0 10px}
+h2{font-size:42px;font-weight:500;margin:10px 0;color:var(--brown)}
+p{font-size:22px;line-height:1.45}
+.date{font-size:34px;letter-spacing:4px;margin:25px 0 5px;color:var(--gold)}
+.time{font-size:23px}.place{font-size:24px}
+.btn{display:inline-block;border:1px solid var(--gold);background:var(--gold);color:white;padding:13px 23px;border-radius:30px;text-decoration:none;font-size:18px;margin:8px;cursor:pointer}
+.btn.alt{background:transparent;color:var(--gold)}
+.scroll{position:absolute;bottom:24px;font-size:17px;animation:bob 1.8s infinite}
+@keyframes bob{50%{transform:translateY(8px)}}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:28px 0}
+.unit{background:var(--beige);border-radius:15px;padding:12px 4px}.num{font-size:32px;color:var(--gold);font-weight:600}.lab{font-size:14px}
+.scratch-wrap{margin:25px auto;max-width:480px;position:relative;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px rgba(93,71,52,.15)}
+#scratchCanvas{display:block;width:100%;height:190px;background:#b7965c;touch-action:none}
+.reveal{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;background:var(--cream);pointer-events:none}
+.reveal strong{font-size:32px;color:var(--gold)} .reveal span{font-size:22px}
+.scratch-label{position:absolute;z-index:2;top:12px;left:0;right:0;color:white;font-size:18px;pointer-events:none}
+.qr{width:190px;height:190px;margin:18px auto;border:2px dashed var(--gold);display:flex;align-items:center;justify-content:center;background:white;font-size:17px;color:#806b55}
+.music{position:fixed;right:18px;bottom:18px;z-index:20;width:54px;height:54px;border-radius:50%;border:1px solid var(--gold);background:var(--cream);color:var(--gold);font-size:22px;box-shadow:0 6px 20px rgba(0,0,0,.12)}
+input[type=file]{display:none}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}
+.gallery div{height:150px;border-radius:15px;background:var(--beige);border:1px dashed var(--gold);display:flex;align-items:center;justify-content:center}
+.small{font-size:16px;opacity:.75}
+@media(max-width:500px){.countdown{gap:5px}.num{font-size:26px}h2{font-size:35px}.card{padding:34px 17px}}
+</style>
+</head>
+<body>
+
+<section>
+<div class="card">
+<div class="ornament">✦ ❦ ✦</div>
+<p>With the blessings of our families</p>
+<h1>Haripriya<br>&amp; Rahul</h1>
+<p>joyfully invite you to celebrate the beginning of our forever.</p>
+<div class="date">11 APRIL 2027</div>
+<div class="time">11:45 AM — 12:20 PM</div>
+<a class="btn" href="#details">Open Invitation</a>
+</div>
+<div class="scroll">Scroll to explore ↓</div>
+</section>
+
+<section id="details">
+<div class="card">
+<div class="ornament">❦</div>
+<h2>Our Special Day</h2>
+<p>Sunday, 11 April 2027</p>
+<p class="time">Wedding Muhurtham: <b>11:45 AM – 12:20 PM</b></p>
+<p class="place"><b>Ponvayalil Convention Centre</b><br>Panmana, Karunagappally</p>
+<a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Ponvayalil%20Convention%20Centre%20Panmana%20Karunagappally">Open in Google Maps</a>
+</div>
+</section>
+
+<section>
+<div class="card">
+<div class="ornament">✦</div>
+<h2>Countdown to Forever</h2>
+<div class="countdown">
+<div class="unit"><div class="num" id="days">0</div><div class="lab">DAYS</div></div>
+<div class="unit"><div class="num" id="hours">0</div><div class="lab">HOURS</div></div>
+<div class="unit"><div class="num" id="minutes">0</div><div class="lab">MINUTES</div></div>
+<div class="unit"><div class="num" id="seconds">0</div><div class="lab">SECONDS</div></div>
+</div>
+<p class="small">Counting every moment until we say “I do”.</p>
+</div>
+</section>
+
+<section>
+<div class="card">
+<div class="ornament">❦</div>
+<h2>A Little Surprise</h2>
+<p>Scratch the card below to reveal our wedding date.</p>
+<div class="scratch-wrap">
+<div class="scratch-label">Scratch to reveal ✨</div>
+<div class="reveal"><strong>11 APRIL 2027</strong><span>11:45 AM — 12:20 PM</span></div>
+<canvas id="scratchCanvas" width="700" height="300"></canvas>
+</div>
+</div>
+</section>
+
+<section>
+<div class="card">
+<div class="ornament">✦</div>
+<h2>Find Us</h2>
+<p>Scan the QR code to open the wedding location.</p>
+<div class="qr">YOUR<br>LOCATION<br>QR CODE</div>
+<p class="small">Replace this box with your Google Maps QR image.</p>
+<a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Ponvayalil%20Convention%20Centre%20Panmana%20Karunagappally">View Location</a>
+</div>
+</section>
+
+<section>
+<div class="card">
+<div class="ornament">❦</div>
+<h2>Our Song</h2>
+<p>Upload your own custom wedding song. It will play while the invitation is open.</p>
+<label class="btn" for="audioFile">Choose Song</label>
+<input id="audioFile" type="file" accept="audio/*">
+<audio id="audio" loop></audio>
+<p id="songName" class="small">No song selected</p>
+<h1 style="font-size:62px">Haripriya ♥ Rahul</h1>
+<p>Two hearts, one beautiful journey.</p>
+</div>
+</section>
+
+<button class="music" id="musicBtn" aria-label="Play music">♫</button>
+
+<script>
+// Countdown: wedding time is interpreted as IST (UTC+05:30).
+const target = new Date("2027-04-11T11:45:00+05:30").getTime();
+function tick(){
+  let d=Math.max(0,target-Date.now()), s=Math.floor(d/1000);
+  document.getElementById('days').textContent=Math.floor(s/86400);
+  document.getElementById('hours').textContent=Math.floor(s%86400/3600);
+  document.getElementById('minutes').textContent=Math.floor(s%3600/60);
+  document.getElementById('seconds').textContent=s%60;
+}
+tick(); setInterval(tick,1000);
+
+// Custom song upload
+const audio=document.getElementById('audio'), file=document.getElementById('audioFile');
+file.addEventListener('change',()=>{if(file.files[0]){
+  audio.src=URL.createObjectURL(file.files[0]);
+  document.getElementById('songName').textContent=file.files[0].name;
+  audio.play().catch(()=>{});
+}});
+document.getElementById('musicBtn').onclick=()=>{
+  if(audio.paused) audio.play().catch(()=>{}); else audio.pause();
+};
+
+// Scratch-to-reveal canvas
+const c=document.getElementById('scratchCanvas'), ctx=c.getContext('2d');
+function cover(){
+  ctx.globalCompositeOperation='source-over';
+  ctx.fillStyle='#b7965c'; ctx.fillRect(0,0,c.width,c.height);
+  ctx.fillStyle='rgba(255,255,255,.75)'; ctx.font='bold 28px Cormorant Garamond';
+  ctx.textAlign='center'; ctx.fillText('SCRATCH HERE',c.width/2,c.height/2+10);
+}
+cover(); let drawing=false;
+function scratch(x,y){ctx.globalCompositeOperation='destination-out';ctx.beginPath();ctx.arc(x,y,34,0,Math.PI*2);ctx.fill();}
+function pos(e){const r=c.getBoundingClientRect();const t=e.touches?e.touches[0]:e;return{x:(t.clientX-r.left)*c.width/r.width,y:(t.clientY-r.top)*c.height/r.height}}
+c.addEventListener('pointerdown',e=>{drawing=true;scratch(...Object.values(pos(e)))});
+c.addEventListener('pointermove',e=>{if(drawing)scratch(...Object.values(pos(e)))});
+window.addEventListener('pointerup',()=>drawing=false);
+c.addEventListener('touchstart',e=>{drawing=true;scratch(...Object.values(pos(e)))},{passive:true});
+c.addEventListener('touchmove',e=>{if(drawing)scratch(...Object.values(pos(e)))},{passive:true});
+</script>
+</body>
+</html>
